@@ -3,8 +3,9 @@ import { AppBar, Typography, Toolbar, Avatar, Button } from '@material-ui/core';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
-
+//InfinityLogo
 import happily from "../../images/happily.png";
+import InfinityLogo from "../../images/InfinityLogo.png";
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
@@ -39,7 +40,7 @@ const Navbar = () => {
     <AppBar className={classes.appBar} position="static" color="inherit">
       <div className={classes.brandContainer}>
         <Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">INFINITY</Typography>
-        <img className={classes.image} src={happily} alt="icon" height="60" />
+        <img className={classes.image} src={InfinityLogo} alt="icon" height="60" />
       </div>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (

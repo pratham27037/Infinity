@@ -12,6 +12,7 @@ export default makeStyles((theme) => ({
     padding: '10px 50px',
   },
   heading: {
+    fontSize : '45px',
     color: 'rgba(0,183,255, 1)',
     textDecoration: 'none',
   },
